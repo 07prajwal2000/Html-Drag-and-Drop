@@ -33,9 +33,12 @@ body {
 
 .card span {
   background-color: deepskyblue;
-  position: absolute;
   display: none;
-  left: 10px;
+  width: 45px;
+  text-align: center;
+  margin: auto;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .card:hover span {

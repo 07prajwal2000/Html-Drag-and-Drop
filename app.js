@@ -43,18 +43,11 @@ function AddCard() {
     const randNo = parseInt(Math.random() * 10);
     var node = document.createElement('div');
     var nodeSpan = document.createElement('span');
-    const SetPos = (ele) => {
-        ele.style.left = "10px";
-        ele.style.top = "-30px";
-    };
 
     nodeSpan.innerHTML = 'Delete';
     nodeSpan.onclick = (e) => {
-        SetPos(e.target);
         node.remove()
     };
-
-    node.onmousemove = (e) => { SetPos(nodeSpan);};
 
     node.appendChild(nodeSpan);
     node.classList.add('card');

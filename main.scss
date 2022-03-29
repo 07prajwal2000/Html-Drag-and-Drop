@@ -30,9 +30,11 @@ body {
     
     span {
         background-color: deepskyblue;
-        position: absolute;
         display: none;
-        left: 10px;
+        width: 45px;
+        text-align: center;
+        margin: auto;
+        transform: translateY(-30px);
     }
     
     &:hover {
