@@ -1,0 +1,49 @@
+body {
+  background-color: azure;
+  min-width: 100vw;
+  min-height: 100vh;
+  border: 1px solid green;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#add-card {
+  padding: 10px;
+  color: #111111;
+  background-color: burlywood;
+  border: none;
+}
+
+#add-card:focus {
+  background-color: #ae8044;
+}
+
+.card {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: coral;
+}
+
+.card span {
+  background-color: deepskyblue;
+  position: absolute;
+  display: none;
+  left: 10px;
+}
+
+.card:hover span {
+  top: -30px;
+  display: block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: maroon;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

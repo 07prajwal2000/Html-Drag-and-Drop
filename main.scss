@@ -1,0 +1,48 @@
+body {
+    background-color: azure;
+    min-width: 100vw;
+    min-height: 100vh;
+    border: 1px solid green;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+#add-card {
+    padding: 10px;
+    color: rgb(17, 17, 17);
+    background-color: burlywood;
+    border: none;
+
+    &:focus {
+        background-color: rgb(174, 128, 68);
+    }
+}
+
+.card {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: coral;
+    
+    span {
+        background-color: deepskyblue;
+        position: absolute;
+        display: none;
+        left: 10px;
+    }
+    
+    &:hover {
+        span {
+            top: -30px;
+            display: block;
+            border-radius: 20px;
+            padding: 5px 10px;
+            color: maroon;
+            cursor: pointer;
+        }
+    }
+}
